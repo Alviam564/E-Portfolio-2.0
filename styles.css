@@ -55,7 +55,7 @@ nav {
   animation: fade-up 650ms 400ms backwards;
 }
 .nav__list {
-  padding: 5px;
+  padding: 1px;
 }
 .nav__listl {
   display: flex;
@@ -128,10 +128,39 @@ li {
   background-color: red;  
   transition: all 300ms ease;
 }
+.header {
+  margin-left: 50px;
+  margin-right: 50px;
+}
+.header_TitleO {
+  font-size: 120px;
+  color: #ef644b;
+  text-align:start;
+  padding-left: 250px;
+}
+.header_TitleBLU {
+  font-size: 110px;
+  text-align: start;
+  padding-left: 250px;
+  color: blue;
+}
+.header-p {
+  width: 30%;
+  font-size: 23px;
+  margin-left: 255px;
+  font-weight: 400;
+  line-height: 1.75;
+}
+.text-purple {
+  color: #6415ff;
+  font-weight: bold;
+}
+.aboutme_link {
+  padding-left: 251px;
+}
 .aboutme_links{
+  width: 50%;
   font-size: 28px;
-  color: #242424;
-  padding: 0 16px;
   animation: fade-up 650ms 600ms backwards;
 }
 .fa, .fab, .fad, .fal, .far, .fas {
@@ -146,33 +175,22 @@ li {
 .fa-linkedin-in:before {
   content: "\f0e1";
 }
+.fa-linkedin {
+  color: #0c61be;
+}
 .fa-github:before {
   content: "\f09b";
 }
-.fa-envelope::before {
-  content: "\f0e0";
+.fa-github {
+  color: black;
 }
 .fa-file-pdf::before {
   content: "\f1c1";
 }
-.fa-link:before {
-  content: "\f0c1";
+.fa-file-pdf {
+  color: red;
 }
-.header {
-  padding: 32px;
-}
-.Big_TitleS {
-  padding: 5px 0;
-}
-.Big_TitleO {
-  font-size: 100px;
-  color: #ef644b;
-  margin-right: 700px;
-}
-.Big_TitleBLU {
-  font-size: 100px;
-  color: blue;
-}
+
 /*
 
 

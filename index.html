@@ -11,10 +11,9 @@
 <body>
     <section id="Contact" onmousemove="movingBackground(event)">
         <nav>
-            <div class="CS_logo-mask-top">
+            <figure class="CS_logo-mask-top">
                 <img src="./assets/hanging-tag-coming-soon-modern-web-banner-element-vector-29133388.jpg" class="CS_logo">
-            </div>
-            <div>
+            </figure>
                 <ul class="nav__listl">
                     <li class="nav__list">
                         <a href="#About" class="
@@ -33,22 +32,29 @@
                         Projects</a>
                     </li>
                     <li class="nav__list">
-                        <a href="#Contact" class="
+                        <a href="#Itisme" class="
                         nav__list1
                         nav__link--anchor-ll
                         nav__link--anchor-ll--colorll
                         link__hover-effect">
                         Contacts</a>
                     </li>
+                    <li class="nav__list click">
+                        <a href="#" class="
+                        nav__list1
+                        nav__link--anchor-switch
+                        link__hover-effect--black
+                        link__hover-effect"></a>
+                        <i class="fa fa-adjust"></i>
+                    </li>
                 </ul>
-            </div>
         </nav>
         <header class="header">
-            <div class="lift-up">
+            <div>
                 <h1 class="header_TitleO">Hey</h1>
                 <h1 class="header_TitleBLU">I'm William.</h1>
                 <p class="header-p">I'm a <span class="text-purple">Frontend Software Engineer</span> with a strong passion for building web applications with great user experiences.
-                    Here's a bit more<a href="#It me" class="text-purple">about me</a>.
+                    Here's a bit more<a href="#Itisme" class="text-purple">about me.</a>
                 </p>
                 <div class="aboutme_link">
                     <a href="https://linkedin.com/in/william-alvarez-145228335" target="_blank" class="aboutme_links">
@@ -62,34 +68,61 @@
                     </a>
                 </div>
             </div>
-        </div>
+        </header>
+        <button class="mail-btn">
+            <i class="fa fa-envelope"></i>
+        </button>
         <a href="#">
             <button class=""></button>
         </a>
-        <div id="It me">
-            <div class="">
-                <div class="">
-                    <div class="">
-                        <h1 class="">Here is a little bit about me</h1>
-                        <h3 class="">Beginner Engineer</h3>
+        <div id="Itisme">
+            <div class="inner_Contact inner_Contact-row">
+                <div class="inner_Contacts_Side1">
+                    <div class="inner_Contacts_title">
+                        <h1 class="inner_Contacts_title-fix">Here's a little bit about me.</h1>
+                        <h3 class="inner_Contacts_title-fix">Beginner Engineer</h3>
                     </div>
-                    <div class="">
-                        <p class="">
+                    <div>
+                        <p class="inner_Contacts_para">
                             I'm a 23 year-old New Yorker frontend software engineer in training to develop websites for top-tech companies like Google.
                             I currently understand and continue to learn the basics of engineering wanting to be able to assist in solving extremely difficult engineering problems
                         </p>
                     </div>
-                    <div class="">
-                        <figure class=""><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/HTML5_Badge.svg/240px-HTML5_Badge.svg.png" alt=""></figure>
-                        <figure class=""><img src="https://cdn.iconscout.com/icon/free/png-256/css-131-722685.png" alt=""></figure>
-                        <figure class=""><img src="https://cdn.iconscout.com/icon/free/png-256/javascript-1-225993.png" alt=""></figure>
-                        <figure class=""><img src="https://cdn.iconscout.com/icon/free/png-256/react-3-1175109.png" alt=""></figure>
+                    <div class="inner_Contacts_Side1_list">
+                        <div class="inner_Contacts">
+                            <figure class="inner_Contacts_Side1_img--wrapper">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/HTML5_Badge.svg/240px-HTML5_Badge.svg.png" alt="" 
+                                class="inner_Contacts_Side1_img">
+                            </figure>
+                            <span class="inner_Contacts_language_name">HTML</span>
+                        </div>
+                        <div class="inner_Contacts">
+                            <figure class="inner_Contacts_Side1_img--wrapper">
+                                <img src="https://cdn.iconscout.com/icon/free/png-256/css-131-722685.png" alt="" 
+                                class="inner_Contacts_Side1_img">
+                            </figure>
+                            <span class="inner_Contacts_language_name">CSS</span>
+                        </div>
+                        <div class="inner_Contacts">
+                            <figure class="inner_Contacts_Side1_img--wrapper">
+                                <img src="https://cdn.iconscout.com/icon/free/png-256/javascript-1-225993.png" alt="" 
+                                class="inner_Contacts_Side1_img">
+                            </figure>
+                            <span class="inner_Contacts_language_name">JavaScrip</span>
+                        </div>
+                        <div class="inner_Contacts">
+                            <figure class="inner_Contacts_Side1_img--wrapper">
+                                <img src="https://cdn.iconscout.com/icon/free/png-256/react-3-1175109.png" alt="" 
+                                 class="inner_Contacts_Side1_img">
+                            </figure>
+                            <span class="inner_Contacts_language_name">React</span>
+                        </div>
                     </div>
                 </div>
-                <div class="">
-                    <div class="">
-                        <h3 class="">Let's have a chat!</h3>
-                        <p class="">I'm currently open to new opportunities.</p>
+                <div class="inner_Contacts_Side2">
+                    <div class="inner_Contacts_title">
+                        <h2 class="inner_Contacts_title-fix">Let's have a chat!</h3>
+                        <h3 class="inner_Contacts_title-fix">I'm currently open to new opportunities.</p>
                     </div>
                     <div class="">
                         <div class="">
@@ -110,6 +143,7 @@
                     </div>
                 </div>
             </div>
+            </div>
         </div>
         <img src="./assets/circle.svg" class="">
         <img src="./assets/semi circle.svg" class="">
@@ -117,32 +151,43 @@
         <img src="./assets/triangle.svg" class="">
     </section>
     <section id="Projects">
-        <div class="">
+        <div class="project-row">
             <h2 class="">Here is some of my work</h2>
-            <div class="">
-                <div class="">
-                    <img src="" alt="">
-                    <div class="">
-                        <h3 class="">Comming soon</h3>
-                        <p class=""></p>
+            <ul class="project__list">
+                <li class="project">
+                    <div class="project__wrapper">
+                        <img src="./assets/chat.png" class="project__img" alt="">
+                        <div class="project__description_wrapper"></div>
+                        <div class="project__description">
+                            <h3 class="project__description--title">Coming soon</h3>
+                            <h4 class="project__description--sub-title"></h4>
+                            <p class="project__description--para"></p>
+                        </div>
                     </div>
-                </div>
-                <div class="">
-                    <img src="" alt="">
-                    <div class="">
-                        <h3 class=""> Comming Soon</h3>
-                        <p class=""></p>
+                </li>
+                <li class="project">
+                    <div class="project__wrapper">
+                        <img src="./assets/Original Portfolio.png" class="project__img" alt="">
+                        <div class="project__description_wrapper"></div>
+                        <div class="project__description">
+                            <h3 class="project__description--title">Original Portfolio</h3>
+                            <h4 class="project__description--sub-title">HTML, CSS</h4>
+                            <p class="project__description--para"></p>
+                        </div>
                     </div>
-                </div>
-                <div class="">
-                    <img src="" alt="">
-                    <div class="">
-                        <h3 class="">Prgect Treact</h3>
-                        <h4 class="">HTML, CSS</h4>
-                        <p class=""> Treact a sit dedicating to helping new/bigginer web developers with their journy into web designiers, depending on what type of ideal plan you have in mine they provide you with great service</p>
+                </li>
+                <li class="project">
+                    <div class="project__wrapper">
+                        <img src="./assets/Project Treact.png" class="project__img" alt="">
+                        <div class="project__description_wrapper"></div>
+                        <div class="project__description">
+                            <h3 class="project__description--title">Project Treact</h3>
+                            <h4 class="project__description--sub-title">HTML, CSS</h4>
+                            <p class="project__description--para"> Treact a sit dedicating to helping new/bigginer web developers with their journy into web designiers, depending on what type of ideal plan you have in mine they provide you with great service</p>
+                        </div>
                     </div>
-                </div>
-            </div>
+                </li>
+            </ul>
         </div>
     </section>
     <footer Id="contact">
@@ -168,7 +213,7 @@
                     link__hover-effect
                     Contact__William--yellow">Resume</a>
                 </div>
-                <div class="copyrightw">
+                <div class="copyright_w">
                     Copyright © 2025 William Alvarez Rodas
                 </div>
             </div>

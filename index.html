@@ -7,6 +7,14 @@
     <link rel="stylesheet" href="styles.css">
     <script src="https://kit.fontawesome.com/07eddb103e.js" crossorigin="anonymous"></script>
     <script src="app.js" defer></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+            emaljs.init({
+                publickey: "crFWlVbYA5WGha-Qm",
+            })
+        })();
+    </script>
 </head>
 <body>
     <section id="Contact" onmousemove="movingBackground(event)">
@@ -15,36 +23,32 @@
                 <img src="./assets/hanging-tag-coming-soon-modern-web-banner-element-vector-29133388.jpg" class="CS_logo">
             </figure>
                 <ul class="nav__listl">
-                    <li class="nav__list">
+                    <li class="nav__list" onclick="toggleinner_Contact()">
                         <a href="#About" class="
                         nav__list1 
                         nav__link--anchor-primary
-                        nav__link--anchor-primary--color
-                        link__hover-effect">
+                        nav__link--anchor-primary--color">
                         About</a>
                     </li>
                     <li class="nav__list">
                         <a href="#Projects" class="
                         nav__list1
                         nav__link--anchor-l
-                        nav__link--anchor-l--colorl
-                        link__hover-effect">
+                        nav__link--anchor-l--colorl">
                         Projects</a>
                     </li>
-                    <li class="nav__list">
-                        <a href="#Itisme" class="
+                    <li class="nav__list" onclick="toggleinner_Contact()">
+                        <a href="#" class="
                         nav__list1
                         nav__link--anchor-ll
-                        nav__link--anchor-ll--colorll
-                        link__hover-effect">
+                        nav__link--anchor-ll--colorll">
                         Contacts</a>
                     </li>
-                    <li class="nav__list click">
+                    <li class="nav__list click" onclick="Darkmode_toggle()">
                         <a href="#" class="
                         nav__list1
                         nav__link--anchor-switch
-                        link__hover-effect--black
-                        link__hover-effect"></a>
+                        link__hover-effect--black"></a>
                         <i class="fa fa-adjust"></i>
                     </li>
                 </ul>
@@ -54,7 +58,7 @@
                 <h1 class="header_TitleO">Hey</h1>
                 <h1 class="header_TitleBLU">I'm William.</h1>
                 <p class="header-p">I'm a <span class="text-purple">Frontend Software Engineer</span> with a strong passion for building web applications with great user experiences.
-                    Here's a bit more<a href="#Itisme" class="text-purple">about me.</a>
+                    Here's a bit more<span class="text-purple PTspeacial" onclick="toggleinner_Contact()"> about me.</span>
                 </p>
                 <div class="aboutme_link">
                     <a href="https://linkedin.com/in/william-alvarez-145228335" target="_blank" class="aboutme_links">
@@ -69,90 +73,88 @@
                 </div>
             </div>
         </header>
-        <button class="mail-btn">
-            <i class="fa fa-envelope"></i>
-        </button>
-        <a href="#">
-            <button class=""></button>
+        <a href="#Projects" class="project-scroll">
+            <div class="project-icon click"></div>
         </a>
-        <div id="Itisme">
-            <div class="inner_Contact inner_Contact-row">
-                <div class="inner_Contacts_Side1">
-                    <div class="inner_Contacts_title">
-                        <h1 class="inner_Contacts_title-fix">Here's a little bit about me.</h1>
-                        <h3 class="inner_Contacts_title-fix">Beginner Engineer</h3>
-                    </div>
-                    <div>
-                        <p class="inner_Contacts_para">
-                            I'm a 23 year-old New Yorker frontend software engineer in training to develop websites for top-tech companies like Google.
-                            I currently understand and continue to learn the basics of engineering wanting to be able to assist in solving extremely difficult engineering problems
-                        </p>
-                    </div>
-                    <div class="inner_Contacts_Side1_list">
-                        <div class="inner_Contacts">
-                            <figure class="inner_Contacts_Side1_img--wrapper">
-                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/HTML5_Badge.svg/240px-HTML5_Badge.svg.png" alt="" 
-                                class="inner_Contacts_Side1_img">
-                            </figure>
-                            <span class="inner_Contacts_language_name">HTML</span>
-                        </div>
-                        <div class="inner_Contacts">
-                            <figure class="inner_Contacts_Side1_img--wrapper">
-                                <img src="https://cdn.iconscout.com/icon/free/png-256/css-131-722685.png" alt="" 
-                                class="inner_Contacts_Side1_img">
-                            </figure>
-                            <span class="inner_Contacts_language_name">CSS</span>
-                        </div>
-                        <div class="inner_Contacts">
-                            <figure class="inner_Contacts_Side1_img--wrapper">
-                                <img src="https://cdn.iconscout.com/icon/free/png-256/javascript-1-225993.png" alt="" 
-                                class="inner_Contacts_Side1_img">
-                            </figure>
-                            <span class="inner_Contacts_language_name">JavaScrip</span>
-                        </div>
-                        <div class="inner_Contacts">
-                            <figure class="inner_Contacts_Side1_img--wrapper">
-                                <img src="https://cdn.iconscout.com/icon/free/png-256/react-3-1175109.png" alt="" 
-                                 class="inner_Contacts_Side1_img">
-                            </figure>
-                            <span class="inner_Contacts_language_name">React</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="inner_Contacts_Side2">
-                    <div class="inner_Contacts_title">
-                        <h2 class="inner_Contacts_title-fix">Let's have a chat!</h3>
-                        <h3 class="inner_Contacts_title-fix">I'm currently open to new opportunities.</p>
-                    </div>
-                    <div class="">
-                        <div class="">
-                            <label for="">Name</label>
-                            <input class="text">
-                        </div>
-                        <div class="">
-                            <label for="">Email</label>
-                            <input type="text" name="" id="">
-                        </div>
-                        <div class="">
-                            <label for="">Messager</label>
-                            <textarea name="" id=""></textarea>
-                        </div>
-                    </div>
-                    <div class="">
-                        <button class="">Send it my way</button>
-                    </div>
+        <a href= "#">
+            <button class="mail-btn click" onclick="toggleinner_Contact()">
+                <i class="fa fa-envelope"></i>
+            </button>
+        </a>
+        <div class="inner_Contact">
+            <div class="inner_Contacts_Side1 inner_Contacts_Side1-about">
+                <h3 class="inner_Contacts_title">Here's a bit about me.</h3>
+                <h4 class="inner_Contacts_sub_title">Beginner Engineer</h4>
+                <p class="inner_Contacts_para">
+                    I'm a 23 year-old New Yorker <span class="text-purple">frontend software engineer</span> in training to develop websites for top-tech companies like <span class="text-green">Google</span>.
+                    I currently understanding and learning the basics like <span class="text-purple">React</span>, wanting to be able to assist in solving extremely difficult engineering problems.
+                </p>
+                <div class="inner_Contacts_Side1_list">
+                    <figure class="inner_Contacts_Side1_img--wrapper">
+                        <img class="inner_Contacts_Side1_img" 
+                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/HTML5_Badge.svg/240px-HTML5_Badge.svg.png" alt="">
+                        <span class="inner_Contacts_language_name">HTML</span>
+                    </figure>
+                    <figure class="inner_Contacts_Side1_img--wrapper">
+                        <img class="inner_Contacts_Side1_img" 
+                        src="https://cdn.iconscout.com/icon/free/png-256/css-131-722685.png" alt="">
+                        <span class="inner_Contacts_language_name">CSS</span>
+                    </figure>
+                    <figure class="inner_Contacts_Side1_img--wrapper">
+                        <img class="inner_Contacts_Side1_img" 
+                        src="https://cdn.iconscout.com/icon/free/png-256/javascript-1-225993.png" alt="">
+                        <span class="inner_Contacts_language_name">JavaScrip</span>
+                    </figure>
+                    <figure class="inner_Contacts_Side1_img--wrapper">
+                        <img class="inner_Contacts_Side1_img" 
+                        src="https://cdn.iconscout.com/icon/free/png-256/react-3-1175109.png" alt="">
+                        <span class="inner_Contacts_language_name">React</span>
+                    </figure>
                 </div>
             </div>
+            <div class="inner_Contacts_Side2 inner_Contacts_Side2-about">
+                <button class="inner_Contact_exit click" onclick="toggleinner_Contact()">
+                    <i class="fa fa-close"></i>
+                </button>
+                <h3 class="inner_Contacts_title">Let's have a chat!</h3>
+                <h4 class="inner_Contacts_sub_title">I'm currently open to new opportunities.</h4>
+                <form id="contact_form" onsubmit="Contact(event)">
+                    <div class="form_items">
+                        <label class="item_lable">Name</label>
+                        <input class="input" name="user_name" type="text" required></input>
+                    </div>
+                    <div class="form_items">
+                        <label class="item_lable">Email</label>
+                        <input class="input" name="user_email" type="email" required></input>
+                    </div>
+                    <div class="form_items">
+                        <label class="item_lable">Message</label>
+                        <textarea class="textarea" name="message" type="text" required></textarea>
+                    </div>
+                    <button id="contact_submit" class="form_submit"> Send it my way </button>
+                </form>
+                <div class="inner_Contact_overlay inner_Contact_overlay--Loading">
+                    <i class="fa fa-spinner"></i>
+                </div>
+                <div class="inner_Contact_overlay inner_Contact_overlay--success">
+                    Thanks for your time and message! Looking forward to speaking to you soon.
+                </div>
             </div>
         </div>
-        <img src="./assets/circle.svg" class="">
-        <img src="./assets/semi circle.svg" class="">
-        <img src="./assets/squiggly.svg" class="">
-        <img src="./assets/triangle.svg" class="">
+        <img src="./assets/semi circle.svg" class="shape shape-0">
+        <img src="./assets/circle.svg" class="shape shape-1">
+        <img src="./assets/squiggly.svg" class="shape shape-2">
+        <img src="./assets/circle.svg" class="shape shape-3">
+        <img src="./assets/triangle.svg" class="shape shape-4">
+        <img src="./assets/circle.svg" class="shape shape-5">
+        <img src="./assets/squiggly.svg" class="shape shape-6">
+        <img src="./assets/circle.svg" class="shape shape-7">
+        <img src="./assets/semi circle.svg" class="shape shape-8">
     </section>
     <section id="Projects">
         <div class="project-row">
-            <h2 class="">Here is some of my work</h2>
+            <h1 class="project-title-text">Here is some of my 
+                <span class="text-purple">Work</span></h1>
             <ul class="project__list">
                 <li class="project">
                     <div class="project__wrapper">
@@ -172,7 +174,7 @@
                         <div class="project__description">
                             <h3 class="project__description--title">Original Portfolio</h3>
                             <h4 class="project__description--sub-title">HTML, CSS</h4>
-                            <p class="project__description--para"></p>
+                            <p class="project__description--para">One of the first few projects that I had created. That showcasing my journey as a beginner frontend software engineer. It highlights my current tech stack, that are HTML, CSS, JavaScript, and React—and I brefly share my enthusiasm for building web applications to enhance internet experiences.</p>
                         </div>
                     </div>
                 </li>
@@ -183,7 +185,7 @@
                         <div class="project__description">
                             <h3 class="project__description--title">Project Treact</h3>
                             <h4 class="project__description--sub-title">HTML, CSS</h4>
-                            <p class="project__description--para"> Treact a sit dedicating to helping new/bigginer web developers with their journy into web designiers, depending on what type of ideal plan you have in mine they provide you with great service</p>
+                            <p class="project__description--para"> Treact a site dedicating to helping new/beginner web developers with their journy into web designiers, depending on what type of plan you have in mine they will provide you with great service.</p>
                         </div>
                     </div>
                 </li>

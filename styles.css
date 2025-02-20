@@ -370,7 +370,7 @@ Inner Contacts
   font-size: 16px;
 }
 .inner_Contacts_Side1 {
-  width: 50%;
+  width: 100%;
   padding: 40px 72px;
   display: flex;
   flex-direction: column;
@@ -413,7 +413,7 @@ Inner Contacts
 }
 .inner_Contacts_Side2{
   position: relative;
-  width: 50%;
+  width: 100%;
   padding: 40px 72px;
   display: flex;
   flex-direction: column;
@@ -767,6 +767,9 @@ footer {
   .header-p{
     font-size: 20px;
   }
+  .project-row {
+    padding: 5px;
+  }
   .inner_Contact {
     top: 0;
     left: 0;
@@ -790,10 +793,20 @@ footer {
   }
   .header-p {
     font-size: 18px;
+    width: 75%;
   }
   section {
     padding: 0;
-
+  }
+  .project {
+    margin-bottom: 50px;
+  }
+  .project-row {
+    padding: 30px;
+  }
+  .project-scroll {
+    left: 50%;
+    bottom: 2%;
   }
   .project__description--para {
     display: none;
@@ -804,11 +817,18 @@ footer {
     width: 100%;
     text-align: center;
   }
+  .project__description--title {
+    text-align: center;
+  }
   .project__description--sub-title {
+    text-align: center;
     margin-bottom: 8px;
   }
   .inner_Contacts_Side1
   .inner_Contacts_Side2 {
     padding: 40px;
   }
+}
+.footer__name {
+  text-align: center;
 }

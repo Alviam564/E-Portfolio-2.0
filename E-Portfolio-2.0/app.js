@@ -14,17 +14,6 @@ function movingBackground(event) {
     }
 }
 
-
-function Darkmode_toggle() {
-    darktoggle = !darktoggle;
-    if (darktoggle) {
-        document.body.classList += " dark_theme"
-    }
-    else {
-        document.body.classList.remove("dark_theme")
-    }
-
-}
 function Contact(event) {
     event.preventDefault();
     const loading = document.querySelector(".inner_Contact_overlay--Loading");
@@ -48,12 +37,21 @@ function Contact(event) {
             );
         });
 }
+function Darkmode_toggle() {
+    darktoggle = !darktoggle;
+    if (darktoggle) {
+        document.body.classList += " dark_theme"
+    }
+    else {
+        document.body.classList.remove("dark_theme")
+    }
 
+}
 function toggleinner_Contact() {
     if (isinner_ContactOpen) {
         isinner_ContactOpen = false;
         return document.body.classList.remove("inner_Contact--open")
     }
     isinner_ContactOpen = true;
-    document.body.classList += "inner_Contact--open";
+    document.body.classList.add("inner_Contact--open");
 }

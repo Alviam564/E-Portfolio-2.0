@@ -90,6 +90,22 @@ nav, .header, .project-scroll {
 .dark_theme .Contact__William {
   color: #ef644b;
 }
+.dark_theme .inner_Contact {
+  box-shadow: 0 20px 80px 0 gray !important;
+}
+.dark_theme .inner_Contact_exit {
+  color: #242424;
+}
+.dark_theme .inner_Contact--open .inner_Contacts_Side1-about,
+.dark_theme .inner_Contact--open .inner_Contacts_Side2-about {
+  transform: translateX(0%);
+}
+.dark_theme .form_submit:hover {
+  background-color: #242424;
+}
+.dark_theme .text-purple {
+  color: yellow;
+}
 .dark_theme .footer__name {
   color: green;
 }
@@ -107,25 +123,28 @@ nav, .header, .project-scroll {
 .dark_theme .project-icon {
   border-color: white;
 }
-.dark_theme .project-icon::after
-.dark_theme .link__hover-effect--black:after {
+.dark_theme .project-icon::after,
+.dark_theme .link__hover-effect--black:after,
+.dark_theme .inner_Contacts_Side1, 
+.dark_theme .inner_Contacts_Side1-about  {
   background-color: #242424;
 }
 .dark_theme .mail-btn {
   background-color: white;
   color: #242424;
 }
-.dark_theme .fa-github:before{
+.dark_theme .fa-github:before,
+.dark_theme .inner_Contacts_Side1-about{
   color: white;
 }
 .dark_theme .fa-envelope,
-.dark_theme .inner_Contacts_Side1, 
-.dark_theme .inner_Contacts_Side1-about {
+.dark_theme .inner_Contacts_Side2-about{
   color: black;
 }
 .dark_theme .footer,
 .dark_theme .project-icon::after,
-.dark_theme .nav__link--anchor-primary--color:hover{
+.dark_theme .nav__link--anchor-primary--color:hover,
+.dark_theme .inner_Contacts_Side2{
   background-color: white;
 }
 /*
@@ -348,26 +367,26 @@ Inner Contacts
 
 
 */
+
 .inner_Contact {
-  width: 90%;
-  display: flex;
+  width: 100%;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   max-width: 1100px;
   height: 700px;
-  box-shadow: 0 20px 80px 0 rgb(0, 0, 0, 0.55);
+  box-shadow: 0 20px 80px 0 black;
   border-radius: 20px;
   overflow: hidden;
   display: flex;
   visibility: hidden;
   z-index: -1 ;
-  transition: visibility 1s; z-index: 1s, box-shadow 0.5s ease;
+  transition: visibility 1s, z-index 1s, box-shadow 0.5s ease;
 }
 .inner_Contact--open .inner_Contact {
   z-index: 60;
-  box-shadow: 0 20px 80px 0 rgb(0, 0, 0, 0.55);
+  box-shadow: 0 20px 80px 0 black;
   visibility: visible;
 }
 .inner_Contact--open .inner_Contacts_Side1-about,
@@ -810,6 +829,9 @@ footer {
   .header_TitleBLU,
   .header_TitleO {
     font-size: 52px;
+  }
+  .nav__listl {
+    font-size: 12px;
   }
   .header-p {
     font-size: 18px;

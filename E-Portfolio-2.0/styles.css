@@ -83,6 +83,24 @@ nav, .header, .project-scroll {
 .dark_theme section{
   color: white;
 }
+.dark_theme .header_TitleO {
+  color: blue;
+}
+.dark_theme .header_TitleBLU,
+.dark_theme .Contact__William {
+  color: #ef644b;
+}
+.dark_theme .footer__name {
+  color: green;
+}
+.dark_theme .footer__name:hover,
+.dark_theme .Contact__William--yellow:hover{
+  color: #6415ff;
+}
+.dark_theme .Contact__William--yellow::after,
+.dark_theme .footer__name::after {
+  background-color: #6415ff;
+}
 .dark_theme section {
   background-color: black;
 }
@@ -100,12 +118,14 @@ nav, .header, .project-scroll {
 .dark_theme .fa-github:before{
   color: white;
 }
-.dark_theme .fa-envelope, 
+.dark_theme .fa-envelope,
 .dark_theme .inner_Contacts_Side1, 
 .dark_theme .inner_Contacts_Side1-about {
   color: black;
 }
-.dark_theme .footer {
+.dark_theme .footer,
+.dark_theme .project-icon::after,
+.dark_theme .nav__link--anchor-primary--color:hover{
   background-color: white;
 }
 /*

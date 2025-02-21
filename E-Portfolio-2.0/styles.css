@@ -839,12 +839,15 @@ footer {
     flex-direction: row-reverse;
     padding: 5px;
   }
+  .CS_logo-mask-top{
+    width: 100PX;
+  }
   .CS_logo {
     width: 100px;
     height: 100px;
   }
   .fa-adjust {
-    padding-right: 6px;
+    padding-right: 15px;
     padding-left: 0;
   }
   .header-p {
@@ -884,7 +887,7 @@ footer {
   .inner_Contacts_Side2 {
     padding: 40px;
   }
-}
-.footer__name {
-  text-align: center;
+  .footer__name {
+    text-align: center;
+  }
 }

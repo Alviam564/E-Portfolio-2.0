@@ -831,8 +831,21 @@ footer {
   .header_TitleO {
     font-size: 52px;
   }
+  .move_down {
+    padding-top: 20px;
+  }
   .nav__listl {
     font-size: 12px;
+    flex-direction: row-reverse;
+    padding: 5px;
+  }
+  .CS_logo {
+    width: 100px;
+    height: 100px;
+  }
+  .fa-adjust {
+    padding-right: 6px;
+    padding-left: 0;
   }
   .header-p {
     font-size: 18px;
